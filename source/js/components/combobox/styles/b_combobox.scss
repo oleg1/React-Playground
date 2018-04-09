@@ -1,0 +1,93 @@
+.bCombobox {
+  width: 400px;
+
+  position: relative;
+  vertical-align: bottom;
+  font-size: 1rem;
+  cursor: pointer;
+
+}
+.bCombobox:hover .eCombobox_inputContainer {
+  color: #333132;
+}
+
+.eCombobox_list {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background: #fff;
+  top: 100%;
+  max-height: 250px;
+  overflow: auto;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  margin-top: 2px;
+  border: solid 1px #d2d2d2;
+}
+
+.bCombobox.mOpen .eCombobox_list {
+  display: block;
+}
+
+.eCombobox_option:focus {
+  outline: 0;
+  color: #007abf;
+}
+
+.eCombobox_input {
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+
+  display: flex;
+  background: #f5f5f5;
+  border: solid 1px #c2c2c2 ;
+  border-radius: 5px;
+
+  &:focus{
+    border-color: #007abf;
+  }
+}
+
+.eCombobox_button {
+  display: inline-block;
+  outline: none;
+  top: 16px;
+  right: 6px;
+  font-size: 14px;
+  cursor: default;
+  text-align: right;
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-width: 7px 5px 0 5px;
+  border-style: solid;
+  border-color: #007abf transparent;
+}
+
+.eCombobox_loader {
+  position:    absolute;
+  top:         10px;
+  right:       3px;
+  height:      17px;
+}
+
+.eCombobox_button:active {
+  color: #007abf;
+}
+
+.eCombobox_option {
+  display: block;
+  cursor: default;
+  color: #333132;
+  font-size: 15px;
+  padding: 8px;
+  font-weight: normal;
+
+  &:hover {
+    background: #dadada;
+  }
+}

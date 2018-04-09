@@ -19,6 +19,9 @@ html, body {
 
 * {
   box-sizing: border-box;
+  &:focus {
+    outline: none;
+  }
 }
 
 h4 {

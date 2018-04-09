@@ -8,6 +8,7 @@
     "@types/react-dom": "^16.0.2",
     "bootstrap-sass": "^3.3.7",
     "classnames": "^2.2.5",
+    "lazy.js": "^0.4.3",
     "propz": "^0.1.2",
     "react": "^15.2.1",
     "react-dom": "^15.2.1"
