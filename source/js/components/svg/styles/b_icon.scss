@@ -1,0 +1,13 @@
+.bIcon {
+  width: 18px;
+  height: 18px;
+  color: white;
+  fill: currentColor;
+
+  &.mBig {
+    height: 30px;
+    width: 30px;
+
+    color: white;
+  }
+}
